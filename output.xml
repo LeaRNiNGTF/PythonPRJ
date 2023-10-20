@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on linux)" generated="20231020 15:32:32.492" rpa="false" schemaversion="4">
+<suite id="s1" name="Test Server" source="/home/ubuntu/Bureau/PythonPRJ/test_app/test_server.robot">
+<test id="s1-t1" name="Health Check Test" line="8">
+<kw name="When I send a GET request to the endpoint">
+<arg>${BASE_URL}/health</arg>
+<msg timestamp="20231020 15:32:32.682" level="FAIL">No keyword with name 'When I send a GET request to the endpoint' found.</msg>
+<status status="FAIL" starttime="20231020 15:32:32.682" endtime="20231020 15:32:32.682"/>
+</kw>
+<kw name="Then the status code should be">
+<arg>200</arg>
+<status status="NOT RUN" starttime="20231020 15:32:32.684" endtime="20231020 15:32:32.685"/>
+</kw>
+<kw name="And the response should contain">
+<arg>Server is running</arg>
+<status status="NOT RUN" starttime="20231020 15:32:32.687" endtime="20231020 15:32:32.687"/>
+</kw>
+<doc>Test the health status of the server</doc>
+<status status="FAIL" starttime="20231020 15:32:32.678" endtime="20231020 15:32:32.687">No keyword with name 'When I send a GET request to the endpoint' found.</status>
+</test>
+<test id="s1-t2" name="Invalid Endpoint Test" line="14">
+<kw name="When I send a GET request to an invalid endpoint">
+<arg>${BASE_URL}/invalid</arg>
+<msg timestamp="20231020 15:32:32.692" level="FAIL">No keyword with name 'When I send a GET request to an invalid endpoint' found.</msg>
+<status status="FAIL" starttime="20231020 15:32:32.692" endtime="20231020 15:32:32.692"/>
+</kw>
+<kw name="Then the status code should be">
+<arg>404</arg>
+<status status="NOT RUN" starttime="20231020 15:32:32.697" endtime="20231020 15:32:32.697"/>
+</kw>
+<kw name="And the response should contain">
+<arg>Not Found</arg>
+<status status="NOT RUN" starttime="20231020 15:32:32.700" endtime="20231020 15:32:32.700"/>
+</kw>
+<doc>Test an invalid endpoint</doc>
+<status status="FAIL" starttime="20231020 15:32:32.688" endtime="20231020 15:32:32.700">No keyword with name 'When I send a GET request to an invalid endpoint' found.</status>
+</test>
+<test id="s1-t3" name="Data Retrieval Test" line="20">
+<kw name="When I send a GET request to the endpoint">
+<arg>${BASE_URL}/data</arg>
+<msg timestamp="20231020 15:32:32.705" level="FAIL">No keyword with name 'When I send a GET request to the endpoint' found.</msg>
+<status status="FAIL" starttime="20231020 15:32:32.705" endtime="20231020 15:32:32.705"/>
+</kw>
+<kw name="Then the status code should be">
+<arg>200</arg>
+<status status="NOT RUN" starttime="20231020 15:32:32.711" endtime="20231020 15:32:32.711"/>
+</kw>
+<kw name="And the response should contain">
+<arg>Expected Data</arg>
+<status status="NOT RUN" starttime="20231020 15:32:32.714" endtime="20231020 15:32:32.714"/>
+</kw>
+<doc>Test the retrieval of data from the server</doc>
+<status status="FAIL" starttime="20231020 15:32:32.701" endtime="20231020 15:32:32.715">No keyword with name 'When I send a GET request to the endpoint' found.</status>
+</test>
+<test id="s1-t4" name="Data Update Test" line="26">
+<kw name="Given the payload">
+<arg>{"key": "value"}</arg>
+<msg timestamp="20231020 15:32:32.719" level="FAIL">No keyword with name 'Given the payload' found.</msg>
+<status status="FAIL" starttime="20231020 15:32:32.719" endtime="20231020 15:32:32.719"/>
+</kw>
+<kw name="When I send a POST request to the endpoint">
+<arg>${BASE_URL}/update</arg>
+<arg>with the payload</arg>
+<status status="NOT RUN" starttime="20231020 15:32:32.724" endtime="20231020 15:32:32.724"/>
+</kw>
+<kw name="Then the status code should be">
+<arg>200</arg>
+<status status="NOT RUN" starttime="20231020 15:32:32.727" endtime="20231020 15:32:32.727"/>
+</kw>
+<kw name="And the response should contain">
+<arg>Update Successful</arg>
+<status status="NOT RUN" starttime="20231020 15:32:32.731" endtime="20231020 15:32:32.731"/>
+</kw>
+<doc>Test updating data on the server</doc>
+<status status="FAIL" starttime="20231020 15:32:32.715" endtime="20231020 15:32:32.731">No keyword with name 'Given the payload' found.</status>
+</test>
+<status status="FAIL" starttime="20231020 15:32:32.493" endtime="20231020 15:32:32.732"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="Test Server">Test Server</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

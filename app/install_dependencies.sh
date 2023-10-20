@@ -10,7 +10,10 @@ apt install -y python3
 apt install -y python3-pip
 
 # Install PIL (Python Imaging Library)
-apt install -y python3-pil
+pip3 install Pillow
 
 # Install tkinter
 apt install -y python3-tk
+
+# Install Robot Framework
+pip3 install robotframework

@@ -5,7 +5,7 @@ html_content = """
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
 </head>
 <body>
     <h1>Welcome to the Python HTTP Server</h1>
